@@ -1,0 +1,1383 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Taichi Murayama" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Journal Modeling the Spread of Fake News on Twitter Taichi Murayama, Shoko Wakamiya, Eiji Aramaki, Ryota Kobayashi PLoS ONE 16(4): e250419, 2021. Paper arXiv github Predicting Regional Influenza Epidemics with" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://hkefka385.github.io/project/publications/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7145a9a307b7b6e0cf40149bdecd66b5.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://hkefka385.github.io/project/publications/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@hkefka385" />
+    <meta property="twitter:creator" content="@hkefka385" />
+  
+  <meta property="og:site_name" content="Taichi Murayama" />
+  <meta property="og:url" content="https://hkefka385.github.io/project/publications/" />
+  <meta property="og:title" content="Publications | Taichi Murayama" />
+  <meta property="og:description" content="Journal Modeling the Spread of Fake News on Twitter Taichi Murayama, Shoko Wakamiya, Eiji Aramaki, Ryota Kobayashi PLoS ONE 16(4): e250419, 2021. Paper arXiv github Predicting Regional Influenza Epidemics with" /><meta property="og:image" content="https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hkefka385.github.io/project/publications/"
+  },
+  "headline": "Publications",
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Taichi Murayama"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Taichi Murayama",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Journal Modeling the Spread of Fake News on Twitter Taichi Murayama, Shoko Wakamiya, Eiji Aramaki, Ryota Kobayashi PLoS ONE 16(4): e250419, 2021. Paper arXiv github Predicting Regional Influenza Epidemics with"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Publications | Taichi Murayama</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="6e95b490efa2862faf218000f8b1ba46" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Taichi Murayama</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Taichi Murayama</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/project/publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Publications</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="journal">Journal</h2>
+<div style="font-size: 75%;">
+<ul>
+<li>
+<strong>Modeling the Spread of Fake News on Twitter</strong><br>
+<strong>Taichi Murayama</strong>, Shoko Wakamiya, Eiji Aramaki, Ryota Kobayashi<br>
+PLoS ONE 16(4): e250419, 2021.<br>
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0250419" class="btn btn-success btn-sm" role="button">Paper</a>
+<a href="https://arxiv.org/abs/2007.14059" class="btn btn-success btn-sm" role="button">arXiv</a>
+<a href="https://github.com/hkefka385/extended_tideh" class="btn btn-success btn-sm" role="button">github</a>
+</li>
+<p></p>
+<li>
+  <strong>Predicting Regional Influenza Epidemics with Uncertainty Estimation using Commuting Data in Japan</strong><br>
+  <strong>Taichi Murayama</strong>, Nobuyuki Shimizu, Sumio Fujita, Shoko Wakamiya, Eiji Aramaki<br>
+  PLoS ONE 16(4): e250417, 2021.<br>
+  <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0250417" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>Surveillance of early stage COVID-19 clusters using search query logs and mobile device-based location information</strong><br>
+  Shohei Hisada, <strong>Taichi Murayama</strong>, Kota Tsubouchi, Sumio Fujita, Shuntaro Yada, Shoko Wakamiya, Eiji Aramaki<br>
+  Scientific Reports 10(1) 18680, 2020.<br>
+  <a href="https://www.nature.com/articles/s41598-020-75771-6" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>WEB上Q＆Aサービスへの投稿ログデータにおける 認知症者の介護で家族が抱える困難と悩み</strong><br>
+  小沢彩歌, 平和也, <strong>村山太一</strong>, 藤田澄男, 伊藤美樹子, 荒牧英治<br>
+  ヘルスコミュニケーション学会雑誌 11(2) 19 - 27, 2020.<br>
+  <a href="http://healthcommunication.jp/journal/vol011no02.html" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>Robust two-stage influenza prediction model considering regular and irregular trends</strong><br>
+  <strong>Taichi Murayama</strong>, Nobuyuki Shimizu, Sumio Fujita, Shoko Wakamiya, Eiji Aramaki<br>
+  PLoS ONE 15(5): e0233126, 2020.<br>
+  <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0233126" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>Comparing medical term usage patterns of professionals and search engine and community question answering service users in Japan: Log analysis</strong><br>
+  Kazuya Taira, <strong>Taichi Murayama</strong>, Sumio Fujita, Mikiko Ito, Kei Kamide, Eiji Aramaki<br>
+  Journal of Medical Internet Research 22(4) e13369, 2020.<br>
+  <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-05213-z" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+</ul>
+</div>
+<h2 id="international-conference">International Conference</h2>
+<div style="font-size: 75%;">
+<ul>
+<li>
+  <strong>Modeling the Spread of Fake News on Twitter</strong><br>
+  <strong>Taichi Murayama</strong>, Shoko Wakamiya, Eiji Aramaki, Ryota Kobayashi<br>
+  7th International Conference on Computational Social Science (IC2S2), Extended Abstract, Oral, 2021<br>
+  <a href="/project/file/IC2S2_2021_modeling_fakenews.pdf" class="btn btn-success btn-sm" role="button">Extended Abstract</a>
+</li>
+<p></p>
+<li>
+  <strong>Fake News Detection using Temporal Features Extracted via Point Process</strong><br>
+  <strong>Taichi Murayama</strong>, Shoko Wakamiya, Eiji Aramaki<br>
+  PLoS ONE 16(4): e250419, 2021.<br>
+  <a href="http://workshop-proceedings.icwsm.org/abstract?id=2020_13" class="btn btn-success btn-sm" role="button">Paper</a>
+  <a href="https://arxiv.org/abs/2007.14059" class="btn btn-success btn-sm" role="button">arXiv</a>
+</li>
+<p></p>
+<li>
+  <strong>NTCIR13 MedWeb Task: Multi-label Classification of Tweets using an Ensemble of Neural Networks</strong><br>
+  Hayate Iso, Camille Ruiz, <strong>Taichi Murayama</strong>, Katsuya Taguchi, Ryo Takeuchi, Hideya Yamamoto, Shoko Wakamiya, Eiji Aramaki<br>
+  In Proc. of the NTCIR13, 2017.<br>
+  <strong style="color:red">Best System Award</strong><br>
+  <a href="http://workshop-proceedings.icwsm.org/abstract?id=2020_13" class="btn btn-success btn-sm" role="button">Paper</a>
+  <a href="https://arxiv.org/abs/2007.14059" class="btn btn-success btn-sm" role="button">arXiv</a>
+</li>
+</ul>
+</div>
+<h2 id="preprint">Preprint</h2>
+<div style="font-size: 75%;">
+<ul>
+<li>
+  <strong>Influenza Surveillance using Search Engine, SNS, On-line Shopping, Q&A Service and Past Flu Patients</strong><br>
+  <strong>Taichi Murayama</strong>, Nobuyuki Shimizu, Sumio Fujita, Shoko Wakamiya, Eiji Aramaki<br>
+  arXiv:2104.06646, 2021.<br>
+  <a href="https://arxiv.org/abs/2104.06646" class="btn btn-success btn-sm" role="button">arXiv</a>
+</li>
+<p></p>
+<li>
+  <strong>Universal Fake News Collection System using Debunking Tweets</strong><br>
+  <strong>Taichi Murayama</strong>, Shoko Wakamiya, Eiji Aramaki<br>
+  arXiv:2007.14083, 2020.<br>
+  <a href="https://arxiv.org/abs/2104.06646" class="btn btn-success btn-sm" role="button">arXiv</a>
+</li>
+</ul>
+</div>
+<h2 id="domestic-conference">Domestic Conference</h2>
+<div style="font-size: 75%;">
+<ul>
+<li>
+  <strong>SNSコメントを用いたニュースメディアバイアスの分析</strong><br>
+  久田祥平、<strong>村山太一</strong>、矢田竣太郎、若宮翔子、荒牧英治<br>
+  第35回人工知能学会全国大会, 1D2-OS-3a-04, 2021.<br>
+</li>
+<p></p>
+<li>
+  <strong>フェイクニュース検出データセットにおける通時的バイアス</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治<br>
+  言語処理学会第27回年次大会 (NLP2021), P5-17, 2021.<br>
+  <a href="https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/P5-17.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+  <a href="" class="btn btn-success btn-sm" role="button">Poster</a>
+</li><p></p>
+<li>
+  <strong>Twitterにおけるフェイクニュース拡散モデルの提案</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治, 小林亮太<br>
+  第13回データ工学と情報マネジメントに関するフォーラム (DEIM2021), H33-5, 2021.<br>
+  <strong style="color:red">学生プレゼンテーション賞</strong><br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2021/papers/H33-5.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+  <a href="https://speakerdeck.com/hkefka385/deim2021-twitterniokeruhueikuniyusukuo-san-moderufalseti-an" class="btn btn-success btn-sm" role="button">Slide</a>
+</li>
+<p></p>
+<li>
+  <strong>検索クエリを活用した複数国におけるインフルエンザ流行予測</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治<br>
+  第13回データ工学と情報マネジメントに関するフォーラム (DEIM2021), A33-1, 2021.<br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2021/papers/A33-1.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+  <a href="https://speakerdeck.com/hkefka385/deim2021-jian-suo-kueriwohuo-yong-sitafu-shu-guo-niokeruinhuruenzaliu-xing-yu-ce" class="btn btn-success btn-sm" role="button">Slide</a>
+</li>
+<p></p>
+<li>
+  <strong>ならまちハッピーマップ：クラウドソーシングと深層学習による街の雰囲気に基づく経路探索手法の提案</strong><br>
+  安西崇, <strong>村山太一</strong>, 矢田竣太郎, 若宮翔子, 荒牧英治<br>
+  第13回データ工学と情報マネジメントに関するフォーラム (DEIM2021), J31-5, 2021.<br>
+  <strong style="color:red">学生プレゼンテーション賞</strong><br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2021/papers/J31-5.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>長期Twitterユーザの投稿内容の経時的分析</strong><br>
+  廣田一輝, <strong>村山太一</strong>, 矢田竣太郎, KongmengLiew, 若宮翔子, 荒牧英治<br>
+  第13回データ工学と情報マネジメントに関するフォーラム (DEIM2021), I11-5, 2021.<br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2021/papers/I11-5.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>Public Concern About COVID-19 Through Search Queries</strong><br>
+  Zhiwei Gao, Kongmeng Liew, <strong>Taichi Murayama</strong>, Shuntaro Yada, Shoko Wakamiya, Eiji Aramaki, Nobuyuki Shimizu, Sumio Fujita<br>
+  第13回データ工学と情報マネジメントに関するフォーラム (DEIM2021), C24-3, 2021..<br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2021/papers/C24-3.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>オルタナティブメディアに着目した日本のツイッターにおけるニュース拡散の分析</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治<br>
+  第5回計算社会科学ワークショップ (CSSJ2021), 2021.<br>
+  <a href="/project/file/CSSJ2021_alternative.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+  <a href="https://speakerdeck.com/hkefka385/cssj2021-orutanateibumedeianizhao-mu-sitari-ben-falsetuitutaniokeruniyusukuo-san-falsefen-xi" class="btn btn-success btn-sm" role="button">Slide</a>
+</li>
+<p></p>
+<li>
+  <strong>訂正投稿を用いたフェイクニュース収集システムの開発</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治<br>
+  第12回データ工学と情報マネジメントに関するフォーラム (DEIM2020)，P2-19, 2020.<br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2020/papers/P2-19.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>点過程を用いたフェイクニュース検出</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治<br>
+  第12回データ工学と情報マネジメントに関するフォーラム (DEIM2020)，A6-4, 2020.<br>
+  <strong style="color:red">2020年度コンピュータサイエンス領域奨励賞</strong><br>
+  <a href="https://proceedings-of-deim.github.io/DEIM2020/papers/A6-4.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>SNSを用いた選挙の争点に対する支持政党ごとの傾向抽出: 2019年大阪ダブル選挙を例に</strong><br>
+  <strong>村山太一</strong>, 若宮翔子, 荒牧英治<br>
+  第4回計算社会科学ワークショップ (CSSJ2020), 2020.<br>
+  <a href="/project/file/CSSJ2020_election.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>WEB上Q&Aサービスへの投稿質問を用いた認知症介護に関する介護者の情報ニーズの探索的分析</strong><br>
+  沢彩歌，平和也, <strong>村山太一</strong>, 藤田澄男，伊藤美樹子，荒牧英治<br>
+  ヘルスコミュニケーション学会，2019.<br>
+</li>
+<p></p>
+<li>
+  <strong>位置関係を考慮した地域ごとのインフルエンザ流行予測</strong><br>
+  <strong>村山太一</strong>, 清水伸幸，藤田澄男，若宮翔子，荒牧英治<br>
+  第11回データ工学と情報マネジメントに関するフォーラム (DEIM2019)，2019.<br>
+  <a href="https://db-event.jpn.org/deim2019/post/papers/315.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>患者情報の季節性と検索クエリに基づくトレンドを用いたインフルエンザ患者数予測</strong><br>
+  <strong>村山太一</strong>, 清水伸幸，藤田澄男，若宮翔子，荒牧英治<br>
+  第35回情報論的学習理論と機械学習 (IBISML2018), D1-66，2018.<br>
+  <a href="https://ibisml.org/ibis2018/discussion/" class="btn btn-success btn-sm" role="button">Site</a>
+</li>
+<p></p>
+<li>
+  <strong>WORD GINI: 使用頻度の偏りを捉える指標の提案とその応用</strong><br>
+  <strong>村山太一</strong>, 若宮翔子，荒牧英治<br>
+  言語処理学会第24回年次大会 (NLP2018),C4-4, 2018.<br>
+  <a href="https://anlp.jp/proceedings/annual_meeting/2018/pdf_dir/C4-4.pdf" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+<li>
+  <strong>ソーシャルメディアを用いた依存症者の発言分類とその空間分析</strong><br>
+  <strong>村山太一</strong>, 若宮翔子，荒牧英治<br>
+  NLP若手の会 (YANS2017), 2017.<br>
+</li>
+<p></p>
+<li>
+  <strong>ソーシャルメディアを用いた依存症者の発言分類とその空間分析</strong><br>
+  <strong>村山太一</strong>, 若宮翔子，荒牧英治<br>
+  情報処理学会データベースシステム研究会 (WebDB Forum)，2017.<br>
+  <strong style="color:red">企業賞；ライフル賞</strong><br>
+  <a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?active_action=repository_view_main_item_detail&page_id=13&block_id=8&item_id=183413&item_no=1/" class="btn btn-success btn-sm" role="button">Paper</a>
+</li>
+<p></p>
+</ul>
+</div>
+<h2 id="award">Award</h2>
+<div style="font-size: 75%;">
+<ul>
+<li>
+  <strong>2021, 感謝状, 第13回データ工学と情報マネジメントに関するフォーラム(DEIM2021).</strong><br>
+</li>
+<li>
+  <strong>2021, 学生プレゼンテーション賞, 第13回データ工学と情報マネジメントに関するフォーラム(DEIM2021).</strong><br>
+</li>
+<li>
+  <strong>2020, 2020年度コンピュータサイエンス領域奨励賞, 情報処理学会.</strong><br>
+</li>
+<li>
+  <strong>2017, NTCIR13, MedWeb Task Best System Award.</strong><br>
+</li>
+<li>
+  <strong>2017, 企業賞；ライフル賞, 情報処理学会データベースシステム研究会.</strong><br>
+</li>
+</ul>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://hkefka385.github.io/project/publications/&amp;text=Publications" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://hkefka385.github.io/project/publications/&amp;t=Publications" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Publications&amp;body=https://hkefka385.github.io/project/publications/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://hkefka385.github.io/project/publications/&amp;title=Publications" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Publications%20https://hkefka385.github.io/project/publications/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://hkefka385.github.io/project/publications/&amp;title=Publications" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://hkefka385.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu01624c31116aa44ade0ddf78bf50021f_37229_270x270_fill_q75_lanczos_center.jpg" alt="Taichi Murayama"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://hkefka385.github.io/">Taichi Murayama</a></h5>
+      <h6 class="card-subtitle">Student</h6>
+      <p class="card-text">My research interests include time series forecasting, fake news, computer social science.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/hkefka385" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://speakerdeck.com/hkefka385" target="_blank" rel="noopener">
+        <i class="fab fa-speaker-deck"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/hkefka385" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scrapbox.io/hkefka385/" target="_blank" rel="noopener">
+        <i class="fas fa-paperclip"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
