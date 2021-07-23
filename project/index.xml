@@ -7,7 +7,7 @@
     <description>Publications</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://hkefka385.github.io/project/</link>
     </image>
@@ -23,8 +23,8 @@
 &lt;li&gt;
 &lt;strong&gt;Measuring Public Concern About COVID-19 Through Search Queries.&lt;/strong&gt;&lt;br&gt;
 Gao, Zhiwei, Sumio Fujita, Nobuyuki Shimizu, Kongmeng Liew, &lt;strong&gt;Taichi Murayama&lt;/strong&gt;, Shuntaro Yada, Shoko Wakamiya, and Eiji Aramaki.&lt;br&gt;
-JMIR Public Health and Surveillance. 2021 Jun.&lt;br&gt;
-&lt;a href=&#34;https://europepmc.org/article/med/34174781&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
+JMIR Public Health and Surveillance, 7(7):e29865 (2021).&lt;br&gt;
+&lt;a href=&#34;https://publichealth.jmir.org/2021/7/e29865&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
 &lt;/li&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;li&gt;
@@ -84,6 +84,7 @@ PLoS ONE 16(4): e250419, 2021.&lt;br&gt;
   &lt;strong&gt;Taichi Murayama&lt;/strong&gt;, Shoko Wakamiya, Eiji Aramaki&lt;br&gt;
   The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD), 2021&lt;br&gt;
   &lt;a href=&#34;&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
+  &lt;a href=&#34;project/file/PKDD2021_Appendix.pdf&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Appendix&lt;/a&gt;
   &lt;a href=&#34;https://arxiv.org/abs/2107.01760&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;arXiv&lt;/a&gt;
   &lt;a href=&#34;https://github.com/hkefka385/single-model-for-influenza-forecasting&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;github&lt;/a&gt;
 &lt;/li&gt;
