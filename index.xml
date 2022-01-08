@@ -43,6 +43,36 @@
     </item>
     
     <item>
+      <title>Japanese Fake News Dataset</title>
+      <link>https://hkefka385.github.io/dataset/fakenews-japanese/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hkefka385.github.io/dataset/fakenews-japanese/</guid>
+      <description>&lt;small&gt;
+&lt;p&gt;&lt;img src=&#34;https://hkefka385.github.io/dataset/image/fig4-3-1.png&#34; alt=&#34;Sample Image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Fake news has caused significant damage to various fields of society, e.g., economy, politics, and health problems. To counter this problem, various fake news datasets have been constructed. These existing datasets have focused almost exclusively on the factuality aspect of the news. &lt;strong&gt;Can we fully understand &amp;ldquo;fake news&amp;rdquo; and various events it causes based on these datasets given factuality labels?&lt;/strong&gt; This is exactly the motivation behind our dataset construction. To promote understanding of fake news, we consider it is necessary to provide not only factual information but also information from various perspectives; the intention of the false news disseminator, the harmfulness of the news to our society, the target of the news, etc. We built a novel annotation scheme with fine-grained labeling to capture the various aspects of fake news, which is built based on the detailed investigations of existing fake news datasets. We then construct the first Japanese fake news dataset according to the annotation scheme. Our dataset can be expected to bring us in-depth understanding of fake news.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;dataset-description&#34;&gt;Dataset Description&lt;/h2&gt;
+&lt;p&gt;Our dataset includes 307 news stories, which were verified by &lt;a href=&#34;https://fij.info/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fact Check Initiative Japan&lt;/a&gt; between July 2019 and October 2021. We provide our dataset in two parts: One is &lt;strong&gt;Label data&lt;/strong&gt;, which contains label information by our annotation and fact-checking URLs.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;paper&#34;&gt;Paper&lt;/h2&gt;
+&lt;p&gt;Read our arXiv paper for more details &lt;a href=&#34;&#34;&gt;here&lt;/a&gt;&lt;br&gt;
+If you use this dataset, please cite&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;a name=&#34;surveylist&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;existing-dataset-list&#34;&gt;Existing dataset list&lt;/h2&gt;
+&lt;/small&gt;
+&lt;br&gt;
+&lt;br&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://hkefka385.github.io/project/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -112,18 +142,18 @@ PLoS ONE 16(4): e250419, 2021.&lt;br&gt;
 &lt;li&gt;
   &lt;strong&gt;Mitigation of Diachronic Bias in Fake News Detection Dataset&lt;/strong&gt;&lt;br&gt;
   &lt;strong&gt;Taichi Murayama&lt;/strong&gt;, Shoko Wakamiya, Eiji Aramaki&lt;br&gt;
-  In Proceedings of the 7th Workshop on Noisy User-generated Text (W-NUT),EMNLP Workshop, 2021&lt;br&gt;
+  In Proceedings of the 7th Workshop on Noisy User-generated Text (W-NUT), EMNLP Workshop, 2021&lt;br&gt;
   &lt;a href=&#34;https://aclanthology.org/2021.wnut-1.21/&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
   &lt;a href=&#34;https://arxiv.org/abs/2108.12601&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;arXiv&lt;/a&gt;
   &lt;a href=&#34;https://github.com/hkefka385/mitigation_diachronic_fake&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;github&lt;/a&gt;
-  &lt;a href=&#34;&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Poster&lt;/a&gt;
+  &lt;a href=&#34;https://hkefka385.github.io/project/file/W-NUT2021_poster.pdf&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Poster&lt;/a&gt;
 &lt;/li&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;li&gt;
   &lt;strong&gt;Finding &#34;Retro&#34; Places in Japan: Crowd-sourced Urban Ambience Estimation&lt;/strong&gt;&lt;br&gt;
   Shu Anzai, &lt;strong&gt;Taichi Murayama&lt;/strong&gt;, Shuntaro Yada, Shoko Wakamiya, Eiji Aramaki&lt;br&gt;
   In Proceeding of the 5th ACM SIGSPATIAL International Workshop on Location-Based Recommendations, Geosocial Networks, and Geoadvertising (LocalRec 2021)&lt;br&gt;
-  &lt;a href=&#34;&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
+  &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3486183.3490999&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
 &lt;/li&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;li&gt;
@@ -314,6 +344,8 @@ PLoS ONE 16(4): e250419, 2021.&lt;br&gt;
   &lt;strong&gt;村山太一&lt;/strong&gt;, 若宮翔子，荒牧英治&lt;br&gt;
   言語処理学会第24回年次大会 (NLP2018),C4-4, 2018.&lt;br&gt;
   &lt;a href=&#34;https://anlp.jp/proceedings/annual_meeting/2018/pdf_dir/C4-4.pdf&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Paper&lt;/a&gt;
+  &lt;a href=&#34;https://sociocom.naist.jp/word-gini/&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Resource1&lt;/a&gt;
+  &lt;a href=&#34;https://sociocom.naist.jp/awd-j/&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Resource2&lt;/a&gt;
 &lt;/li&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;li&gt;
@@ -352,6 +384,34 @@ PLoS ONE 16(4): e250419, 2021.&lt;br&gt;
 &lt;/li&gt;
 &lt;li&gt;
   &lt;strong&gt;2017, 企業賞；ライフル賞, 情報処理学会データベースシステム研究会.&lt;/strong&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 75%;&#34;&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;presentationstalks&#34;&gt;Presentations/Talks&lt;/h2&gt;
+&lt;div style=&#34;font-size: 75%;&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+  &lt;strong&gt;Taichi Murayama&lt;/strong&gt;, &lt;strong&gt;Toward Research for Infodemics : Case study of the infodemic in Japan&lt;/strong&gt; &lt;br&gt;
+  Social Computing Workshop 2021 -Social Computing in the post-pandemic era-, 2021.&lt;br&gt;
+  &lt;a href=&#34;https://speakerdeck.com/hkefka385/toward-research-for-infodemics-case-study-of-the-infodemic-in-japan&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Slide&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 75%;&#34;&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;others&#34;&gt;Others&lt;/h2&gt;
+&lt;div style=&#34;font-size: 75%;&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+  品川, &lt;strong&gt;村山&lt;/strong&gt;, 山本, 邱, 鈴木, 釜堀, 北村, 楢木, 金沢, &lt;strong&gt;Transformerメタサーベイ&lt;/strong&gt; &lt;br&gt;
+  cvpaper.challengeメタサーベイ, 2021.&lt;br&gt;
+  &lt;a href=&#34;https://www.slideshare.net/cvpaperchallenge/transformer-247407256&#34; class=&#34;btn btn-success btn-sm&#34; role=&#34;button&#34;&gt;Slide&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
