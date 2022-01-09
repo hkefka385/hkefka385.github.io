@@ -1,0 +1,37 @@
+python plots_results_s.py /Users/murayamataichi/Desktop/files/chiba2021/data_202107/program/list_gupa /Users/murayamataichi/Desktop/files/chiba2021/streamscope/ver1/_out/dat_tmp_12345_resist_200/dat1/ /Users/murayamataichi/Desktop/files/chiba2021/program
+
+
+
+python plots_results_s.py /Users/murayamataichi/Desktop/files/chiba2021/data_202107/processed/list_resist_gupa /Users/murayamataichi/Desktop/files/chiba2021/streamscope/ver1/_out/dat_tmp_gupa_resist_20/dat1/ /Users/murayamataichi/Desktop/files/chiba2021/program
+
+python plots_results_s.py /Users/murayamataichi/Desktop/files/chiba2021/data_202107/processed/list_resist_gupa /Users/murayamataichi/Desktop/files/chiba2021/streamscope/ver1/_out/dat_tmp_gupa_resist_gupa/dat1/ /Users/murayamataichi/Desktop/files/chiba2021/programa
+
+python plots_results_s.py /Users/murayamataichi/Desktop/files/chiba2021/data_20211115/processed/list_rgupa /Users/murayamataichi/Desktop/files/chiba2021/streamscope/ver1/_ou/dat_tmp_12345_resist_200/dat1/ /Users/murayamataichi/Desktop/files/chiba2021/program
+
+
+
+
+single_model_for_influenza_forecasting_of_multiple_countries_by_multi-task_learning
+
+
+find /data/local/twitter/2021-06-01/2021-06-01-*.01.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | /net/tokyo004-10g/data/str01_03/twitter/ynaga/src/ggrep_json_values "id|id_str" "1428959680575930370" > /data/str01_03/twitter/wakamiya/murayama/nnn.txt'
+
+find /data/local/twitter/2021-06-01/2021-06-01-*.01.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | /net/tokyo004-10g/data/str01_03/twitter/ynaga/src/ggrep_json_values "id" "1399561347424161793" > /data/str01_03/twitter/wakamiya/murayama/nnn.txt'
+
+find /data/local/twitter/2021-06-01/2021-06-01-*.01.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | /net/tokyo004-10g/data/str01_03/twitter/ynaga/src/ggrep_json_values "id_str" "1399561347424161793" > /data/str01_03/twitter/wakamiya/murayama/nnn.txt'
+
+find /data/local/twitter/2021-06-01/2021-06-01-*.01.lz4 | xargs -n 1 -P 12 -I % sh -c "lz4cat % | /net/tokyo004-10g/data/str01_03/twitter/ynaga/src/ggrep_json_values 'id_str' '1399561347424161793' > /data/str01_03/twitter/wakamiya/murayama/nnn.txt"
+
+time find /data/local/twitter/2021-06-01/2021-06-01-*.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | /net/tokyo004-10g/data/str01_03/twitter/ynaga/src/ggrep_json_values "in_reply_to_status_id_str" "1399540928096870405" > /data/str01_03/twitter/wakamiya/murayama/nnn.txt'  
+
+time find /data/local/twitter/2021-06-01/2021-06-01-*.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | /data/str01_03/twitter/ynaga/src/ggrep_json_values quoted_status_id 1399540928096870405 > /data/str01_03/twitter/wakamiya/murayama/%.grep'
+
+
+クラウドソーシングの少量ラベルから深層学習モデルを用いることで、ラベルがないエリアの雰囲気を推定できる。
+
+
+
+find 2021-06-01-*01.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | /data/str01_03/twitter/ynaga/src/ggrep_json_values quoted_status_id 1399540928096870405 > /data/str01_03/twitter/wakamiya/murayama/%.grep'
+
+
+time find /data/local/twitter/2021-06-01/2021-06-01-*.01.lz4 | xargs -n 1 -P 12 -I % sh -c 'lz4cat % | ggrep_json_values "id|id_str" "1399707048971886592" > /guests/wakamiya/temp.txt'

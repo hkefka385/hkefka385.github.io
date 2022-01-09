@@ -680,7 +680,51 @@
 <br>
 <br></p>
 <h2 id="dataset-description">Dataset Description</h2>
-<p>Our dataset includes 307 news stories, which were verified by <a href="https://fij.info/" target="_blank" rel="noopener">Fact Check Initiative Japan</a> between July 2019 and October 2021. We provide our dataset in two parts: One is <strong>Label data</strong>, which contains label information by our annotation and fact-checking URLs.</p>
+<p>Our dataset includes 307 news stories, which were verified by <a href="https://fij.info/" target="_blank" rel="noopener">Fact Check Initiative Japan</a> between July 2019 and October 2021. We provide our dataset in two folders: One is <strong>Label</strong> folder, which contains label information by our annotation and fact-checking URLs. Another is <strong>Tweet</strong> folder, which contains the collected tweet IDs related to each news. <br></p>
+<h4 id="strongour-dataset-is-published-atstrong-httpszenodoorgrecord5831617httpszenodoorgrecord5831617"><strong>Our dataset is published at</strong> <a href="https://zenodo.org/record/5831617" target="_blank" rel="noopener">https://zenodo.org/record/5831617</a></h4>
+<br>
+<ul>
+<li>
+<p><strong>Label folder</strong> <br>
+This folder contains our annotation labels to each news. It is composed of two files.</p>
+<ul>
+<li>
+<p><strong>label.csv</strong> <br>
+This file composes of and ID, article names, URL, and our annotation labels.
+The file is tsv format, whose column names are below:</p>
+<blockquote>
+<p>ID  Article URL Q1  Q2-1  Q2-2A Q2-2B Q4  Q5  Q6  Q7</p>
+</blockquote>
+</li>
+<li>
+<p><strong>q3-*.csv</strong> <br>
+We provide the label for Q3 assigned by each annotator.
+The file is tsv format, whose column names are below:</p>
+<blockquote>
+<p>ID  Q3</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tweet folder</strong><br>
+This folder contains the collected tweet IDs related to each news. In a folder for each news item named news ID, there are two types of posts: one (<strong>FS</strong>) is tweetIDs related to the original news item and another (<strong>FC</strong>) is tweets related to the fact-checking article. <br>
+Additionally, we provide three types of tweet information by separate file:</p>
+<ul>
+<li>Tweet IDs (tweet)</li>
+<li>User IDs (user)</li>
+<li>Conversation IDs (conv) <br></li>
+</ul>
+<p>But, each news folder does not always have all these files because of the removal. <br>
+When we have, in News ID &ldquo;21&rdquo;, a list of tweet IDs and user IDs for the original news article (FS) and a list of tweet IDs and user IDs for the fact-checking article related to it (FC), our file structure would be below:</p>
+<blockquote>
+<p>Tweet/21/FS-21-tweet.txt <br>
+Tweet/21/FS-21-user.txt <br>
+Tweet/21/FC-21-tweet.txt <br>
+Tweet/21/FC-21-user.txt <br></p>
+</blockquote>
+</li>
+</ul>
 <br>
 <br>
 <h2 id="paper">Paper</h2>
