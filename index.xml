@@ -48,7 +48,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hkefka385.github.io/dataset/fakenews-japanese/</guid>
       <description>&lt;small&gt;
-&lt;p&gt;&lt;img src=&#34;https://hkefka385.github.io/dataset/image/fig4-3-1.png&#34; alt=&#34;Sample Image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://hkefka385.github.io/dataset/image/fig4-3-1.png&#34; alt=&#34;Sample Image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Fake news has caused significant damage to various fields of society, e.g., economy, politics, and health problems. To counter this problem, various fake news datasets have been constructed. These existing datasets have focused almost exclusively on the factuality aspect of the news. &lt;strong&gt;Can we fully understand &amp;ldquo;fake news&amp;rdquo; and various events it causes based on these datasets given factuality labels?&lt;/strong&gt; This is exactly the motivation behind our dataset construction. To promote understanding of fake news, we consider it is necessary to provide not only factual information but also information from various perspectives; the intention of the false news disseminator, the harmfulness of the news to our society, the target of the news, etc. We built a novel annotation scheme with fine-grained labeling to capture the various aspects of fake news, which is built based on the detailed investigations of existing fake news datasets. We then construct the first Japanese fake news dataset according to the annotation scheme. Our dataset can be expected to bring us in-depth understanding of fake news.
 &lt;br&gt;
