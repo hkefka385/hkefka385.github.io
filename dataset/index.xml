@@ -92,9 +92,15 @@ Tweet/21/FC-21-user.txt &lt;br&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;paper&#34;&gt;Paper&lt;/h2&gt;
-&lt;p&gt;Read our arXiv paper for more details here&lt;br&gt;
+&lt;p&gt;Read our arXiv paper for more details &lt;a href=&#34;https://arxiv.org/abs/2204.02718&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;br&gt;
 If you use this dataset, please cite&lt;/p&gt;
 &lt;blockquote&gt;
+&lt;p&gt;@article{murayama2022annotation,
+title={Annotation-Scheme Reconstruction for&amp;quot; Fake News&amp;quot; and Japanese Fake News Dataset},
+author={Murayama, Taichi and Hisada, Shohei and Uehara, Makoto and Wakamiya, Shoko and Aramaki, Eiji},
+journal={arXiv preprint arXiv:2204.02718},
+year={2022}
+}&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;br&gt;
 &lt;br&gt;
