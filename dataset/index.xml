@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dataset | Taichi Murayama</title>
+    <title>Datasets | Taichi Murayama</title>
     <link>https://hkefka385.github.io/dataset/</link>
       <atom:link href="https://hkefka385.github.io/dataset/index.xml" rel="self" type="application/rss+xml" />
-    <description>dataset</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <description>Datasets</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>dataset</title>
+      <url>https://hkefka385.github.io/media/icon_hu_645fa481986063ef.png</url>
+      <title>Datasets</title>
       <link>https://hkefka385.github.io/dataset/</link>
     </image>
     
@@ -35,7 +35,7 @@
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://hkefka385.github.io/dataset/image/fig4-3-1.png&#34; alt=&#34;Sample Image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -57,16 +57,14 @@ This folder contains our annotation labels to each news. It is composed of two f
 This file composes of and ID, article names, URL, and our annotation labels.
 The file is tsv format, whose column names are below:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ID  Article URL Q1  Q2-1  Q2-2A Q2-2B Q4  Q5  Q6  Q7&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;ID  Article URL Q1  Q2-1  Q2-2A Q2-2B Q4  Q5  Q6  Q7&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;q3-*.csv&lt;/strong&gt; &lt;br&gt;
 We provide the label for Q3 assigned by each annotator.
 The file is tsv format, whose column names are below:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ID  Q3&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;ID  Q3&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -85,8 +83,7 @@ When we have, in News ID &amp;ldquo;21&amp;rdquo;, a list of tweet IDs and user 
 &lt;p&gt;Tweet/21/FS-21-tweet.txt &lt;br&gt;
 Tweet/21/FS-21-user.txt &lt;br&gt;
 Tweet/21/FC-21-tweet.txt &lt;br&gt;
-Tweet/21/FC-21-user.txt &lt;br&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+Tweet/21/FC-21-user.txt &lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
@@ -100,8 +97,7 @@ title={Annotation-Scheme Reconstruction for&amp;quot; Fake News&amp;quot; and Ja
 author={Murayama, Taichi and Hisada, Shohei and Uehara, Makoto and Wakamiya, Shoko and Aramaki, Eiji},
 journal={arXiv preprint arXiv:2204.02718},
 year={2022}
-}&lt;/p&gt;
-&lt;/blockquote&gt;
+}&lt;/p&gt;&lt;/blockquote&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;a name=&#34;surveylist&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -114,8 +110,7 @@ year={2022}
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Politifact14&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Andreas Vlachos and Sebastian Riedel. 2014. Fact checking: Task definition and dataset construction. InProceedings of the ACL 2014 Workshop onLanguage Technologies and Computational Social Science. 18–22.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Andreas Vlachos and Sebastian Riedel. 2014. Fact checking: Task definition and dataset construction. InProceedings of the ACL 2014 Workshop onLanguage Technologies and Computational Social Science. 18–22.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Buzzfeed_political&lt;/strong&gt;&lt;/p&gt;
@@ -123,27 +118,23 @@ year={2022}
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Random_political&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Benjamin D Horne and Sibel Adali. 2017. This Just In: Fake News Packs a Lot in Title, Uses Similar, Repetitive Contentin Text Body, More Similarto Satire than Real News. InProceedings of the 2nd International Workshop on News and Public Opinion at ICWSM.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Benjamin D Horne and Sibel Adali. 2017. This Just In: Fake News Packs a Lot in Title, Uses Similar, Repetitive Contentin Text Body, More Similarto Satire than Real News. InProceedings of the 2nd International Workshop on News and Public Opinion at ICWSM.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Ahmed2017&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Hadeer Ahmed, Issa Traore, and Sherif Saad. 2017. Detection of online fake news using n-gram analysis and machine learning techniques. InInternational conference on intelligent, secure, and dependable systems in distributed and cloud environments. Springer, 127–138.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Hadeer Ahmed, Issa Traore, and Sherif Saad. 2017. Detection of online fake news using n-gram analysis and machine learning techniques. InInternational conference on intelligent, secure, and dependable systems in distributed and cloud environments. Springer, 127–138.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;LIAR&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Tariq Alhindi, Savvas Petridis, and Smaranda Muresan.2018. Where is your Evidence: Improving Fact-checking by Justification Modeling. InProceedings of the First Workshop on Fact Extraction and VERification (FEVER). 85–90.
-William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset for Fake News Detection. InProceedings of the 55th AnnualMeeting of the Association for Computational Linguistics (Volume 2: Short Papers). 422–426.&lt;/p&gt;
-&lt;/blockquote&gt;
+William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset for Fake News Detection. InProceedings of the 55th AnnualMeeting of the Association for Computational Linguistics (Volume 2: Short Papers). 422–426.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;TSHP-17_politifac&lt;/stong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Hannah Rashkin, Eunsol Choi, Jin Yea Jang, Svitlana Volkova, and Yejin Choi. 2017. Truth of varying shades: Analyzing language in fake newsand political fact-checking. InProceedings of the 2017 conference on empirical methods in natural language processing. 2931–2937.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Hannah Rashkin, Eunsol Choi, Jin Yea Jang, Svitlana Volkova, and Yejin Choi. 2017. Truth of varying shades: Analyzing language in fake newsand political fact-checking. InProceedings of the 2017 conference on empirical methods in natural language processing. 2931–2937.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;FakeNewsAMT&lt;/strong&gt;&lt;/p&gt;
@@ -151,14 +142,12 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Celebrity&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Verónica Pérez-Rosas, Bennett Kleinberg, AlexandraLefevre, and Rada Mihalcea. 2018. Automatic Detection of Fake News. InProceedings of the27th International Conference on Computational Linguistics. 3391–3401.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Verónica Pérez-Rosas, Bennett Kleinberg, AlexandraLefevre, and Rada Mihalcea. 2018. Automatic Detection of Fake News. InProceedings of the27th International Conference on Computational Linguistics. 3391–3401.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Kaggle_UTK&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;TK Machine Learning Club. 2018. Fake News: Build a system to identify unreliable news articles. &lt;a href=&#34;https://www.kaggle.com/c/fake-news&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.kaggle.com/c/fake-news&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;TK Machine Learning Club. 2018. Fake News: Build a system to identify unreliable news articles. &lt;a href=&#34;https://www.kaggle.com/c/fake-news&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.kaggle.com/c/fake-news&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;MisInfoText_Buzzfeed&lt;/strong&gt;&lt;/p&gt;
@@ -166,14 +155,12 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;MisInfoText_Snopes&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Fatemeh Torabi Asr and Maite Taboada. 2019. Big Data and quality data for fake news and misinformation detection.Big Data &amp;amp; Society6, 1(2019), 2053951719843310&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Fatemeh Torabi Asr and Maite Taboada. 2019. Big Data and quality data for fake news and misinformation detection.Big Data &amp;amp; Society6, 1(2019), 2053951719843310&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;FA-KES&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Fatima K Abu Salem, Roaa Al Feel, Shady Elbassuoni, Mohamad Jaber, and May Farah. 2019. Fa-kes: A fake news dataset around the syrian war.InProceedings of the International AAAI Conference on Web and Social Media, Vol. 13. 573–582.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Fatima K Abu Salem, Roaa Al Feel, Shady Elbassuoni, Mohamad Jaber, and May Farah. 2019. Fa-kes: A fake news dataset around the syrian war.InProceedings of the International AAAI Conference on Web and Social Media, Vol. 13. 573–582.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Spanish-v1&lt;/strong&gt;&lt;/p&gt;
@@ -181,38 +168,32 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;stroing&gt;Spanish-v2&lt;/stroing&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Juan-Pablo Posadas-Durán, Helena Gómez-Adorno, Grigori Sidorov, and Jesús Jaime Moreno Escobar. 2019. Detection of fake news in a newcorpus for the Spanish language.Journal of Intelligent &amp;amp; Fuzzy Systems36, 5 (2019), 4869–4876.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Juan-Pablo Posadas-Durán, Helena Gómez-Adorno, Grigori Sidorov, and Jesús Jaime Moreno Escobar. 2019. Detection of fake news in a newcorpus for the Spanish language.Journal of Intelligent &amp;amp; Fuzzy Systems36, 5 (2019), 4869–4876.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;fauxtography&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Dimitrina Zlatkova, Preslav Nakov, and Ivan Koychev.2019. Fact-Checking Meets Fauxtography: Verifying ClaimsAbout Images. InProceedings ofthe 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing(EMNLP-IJCNLP). Association for Computational Linguistics, 2099–2108.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Dimitrina Zlatkova, Preslav Nakov, and Ivan Koychev.2019. Fact-Checking Meets Fauxtography: Verifying ClaimsAbout Images. InProceedings ofthe 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing(EMNLP-IJCNLP). Association for Computational Linguistics, 2099–2108.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Breaking!&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Subhabrata Mukherjee and Gerhard Weikum. 2015. Leveraging joint interactions for credibility analysis in news communities. InProceedings ofthe 24th ACM International on Conference on Information andKnowledge Management. 353–362&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Subhabrata Mukherjee and Gerhard Weikum. 2015. Leveraging joint interactions for credibility analysis in news communities. InProceedings ofthe 24th ACM International on Conference on Information andKnowledge Management. 353–362&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;TDS2020&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Ria Gandhi. 2020. Getting Real with Fake News. &lt;a href=&#34;https://towardsdatascience.com/getting-real-with-fake-news-d4bc033eb38a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://towardsdatascience.com/getting-real-with-fake-news-d4bc033eb38a&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Ria Gandhi. 2020. Getting Real with Fake News. &lt;a href=&#34;https://towardsdatascience.com/getting-real-with-fake-news-d4bc033eb38a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://towardsdatascience.com/getting-real-with-fake-news-d4bc033eb38a&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;FakeCovid&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Gautam Kishore Shahi and Durgesh Nandini. 2020.  FakeCovid – A Multilingual Cross-domain Fact Check News Dataset for COVID-19. InWorkshop Proceedings of the 14th International AAAI Conference on Web and Social Media.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Gautam Kishore Shahi and Durgesh Nandini. 2020.  FakeCovid – A Multilingual Cross-domain Fact Check News Dataset for COVID-19. InWorkshop Proceedings of the 14th International AAAI Conference on Web and Social Media.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;stroing&gt;TrueFact_FND&lt;/stroing&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;KDD 2020 TrueFact Workshop: Making a Credible Webfor Tomorrow: Shared Task 2. &lt;a href=&#34;https://www.microsoft.com/en-us/research/event/kdd-2020-truefact-workshop-making-a-credible-web-for-tomorrow/#!shared-tasks&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.microsoft.com/en-us/research/event/kdd-2020-truefact-workshop-making-a-credible-web-for-tomorrow/#!shared-tasks&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;KDD 2020 TrueFact Workshop: Making a Credible Webfor Tomorrow: Shared Task 2. &lt;a href=&#34;https://www.microsoft.com/en-us/research/event/kdd-2020-truefact-workshop-making-a-credible-web-for-tomorrow/#!shared-tasks&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.microsoft.com/en-us/research/event/kdd-2020-truefact-workshop-making-a-credible-web-for-tomorrow/#!shared-tasks&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/span&gt;
@@ -233,7 +214,7 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://hkefka385.github.io/dataset/image/dataset1.png&#34; alt=&#34;Sample Image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -243,14 +224,12 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;MediaEval_Dataset&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Christina Boididou, Symeon Papadopoulos, Markos Zampoglou, Lazaros Apostolidis, Olga Papadopoulou, and Yiannis Kompatsiaris. 2018. Detec-tion and visualization of misleading content on Twitter.International Journal of Multimedia Information Retrieval7, 1 (2018), 71–86.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Christina Boididou, Symeon Papadopoulos, Markos Zampoglou, Lazaros Apostolidis, Olga Papadopoulou, and Yiannis Kompatsiaris. 2018. Detec-tion and visualization of misleading content on Twitter.International Journal of Multimedia Information Retrieval7, 1 (2018), 71–86.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;PHEME&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Arkaitz Zubiaga, Maria Liakata, Rob Procter, Geraldine Wong Sak Hoi, and Peter Tolmie. 2016.  Analysing how peopleorient to and spreadrumours in social media by looking at conversational threads.PloS one11, 3 (2016), e0150989.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Arkaitz Zubiaga, Maria Liakata, Rob Procter, Geraldine Wong Sak Hoi, and Peter Tolmie. 2016.  Analysing how peopleorient to and spreadrumours in social media by looking at conversational threads.PloS one11, 3 (2016), e0150989.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Twitter-ma&lt;/strong&gt;&lt;/p&gt;
@@ -258,14 +237,12 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;RUMDECT&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Jing Ma, Wei Gao, Prasenjit Mitra, Sejeong Kwon, Bernard J. Jansen, Kam-Fai Wong, and Meeyoung Cha. 2016. Detecting Rumors from Microblogswith Recurrent Neural Networks(IJCAI’16). 3818–3824&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Jing Ma, Wei Gao, Prasenjit Mitra, Sejeong Kwon, Bernard J. Jansen, Kam-Fai Wong, and Meeyoung Cha. 2016. Detecting Rumors from Microblogswith Recurrent Neural Networks(IJCAI’16). 3818–3824&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;RumorEval2017&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Leon Derczynski, Kalina Bontcheva, Maria Liakata, RobProcter, Geraldine Wong Sak Hoi, and Arkaitz Zubiaga. 2017.SemEval-2017 Task 8:RumourEval: Determining rumour veracity and support for rumours. InProceedings of the 11th International Workshop on Semantic Evaluation(SemEval-2017). 69–76.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Leon Derczynski, Kalina Bontcheva, Maria Liakata, RobProcter, Geraldine Wong Sak Hoi, and Arkaitz Zubiaga. 2017.SemEval-2017 Task 8:RumourEval: Determining rumour veracity and support for rumours. InProceedings of the 11th International Workshop on Semantic Evaluation(SemEval-2017). 69–76.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Twitter15&lt;/strong&gt;&lt;/p&gt;
@@ -273,86 +250,72 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Twitter16&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Jing Ma, Wei Gao, and Kam-Fai Wong. 2017. Detect Rumorsin Microblog Posts Using Propagation Structure via Kernel Learning. InProceedingsof the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 708–717.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Jing Ma, Wei Gao, and Kam-Fai Wong. 2017. Detect Rumorsin Microblog Posts Using Propagation Structure via Kernel Learning. InProceedingsof the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 708–717.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;BuzzFace&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Giovanni C Santia and Jake Ryland Williams. 2018. Buzzface: A news veracity dataset with facebook user commentaryand egos. InProceedingsof the 12th International AAAI Conference on Web and Social Media.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Giovanni C Santia and Jake Ryland Williams. 2018. Buzzface: A news veracity dataset with facebook user commentaryand egos. InProceedingsof the 12th International AAAI Conference on Web and Social Media.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Some-like-it-hoax&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Eugenio Tacchini, Gabriele Ballarin, Marco L Della Vedova, Stefano Moret, and Luca de Alfaro. 2017. Some like it Hoax: Automated fake newsdetection in social networks. In2nd Workshop on Data Science for Social Good, SoGood 2017. CEUR-WS, 1–15.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Eugenio Tacchini, Gabriele Ballarin, Marco L Della Vedova, Stefano Moret, and Luca de Alfaro. 2017. Some like it Hoax: Automated fake newsdetection in social networks. In2nd Workshop on Data Science for Social Good, SoGood 2017. CEUR-WS, 1–15.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Media_Weibo&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Zhiwei Jin, Juan Cao, Han Guo, Yongdong Zhang, and Jiebo Luo. 2017. Multimodal fusion with recurrent neural networks for rumor detectionon microblogs. InProceedings of the 25th ACM international conference on Multimedia. 795–816.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Zhiwei Jin, Juan Cao, Han Guo, Yongdong Zhang, and Jiebo Luo. 2017. Multimodal fusion with recurrent neural networks for rumor detectionon microblogs. InProceedings of the 25th ACM international conference on Multimedia. 795–816.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;PHEME-update&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Elena Kochkina, Maria Liakata, and Arkaitz Zubiaga. 2018. All-in-one: Multi-task Learning for Rumour Verification. InProceedings of the 27thInternational Conference on Computational Linguistics. 3402–3413.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Elena Kochkina, Maria Liakata, and Arkaitz Zubiaga. 2018. All-in-one: Multi-task Learning for Rumour Verification. InProceedings of the 27thInternational Conference on Computational Linguistics. 3402–3413.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;FakeNewsNet&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Kai Shu, Deepak Mahudeswaran, Suhang Wang, Dongwon Lee, and Huan Liu. 2020. FakeNewsNet: A Data Repository with News Content, SocialContext, and Spatiotemporal Information for Studying FakeNews on Social Media.Big Data8, 3 (2020), 171–188.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Kai Shu, Deepak Mahudeswaran, Suhang Wang, Dongwon Lee, and Huan Liu. 2020. FakeNewsNet: A Data Repository with News Content, SocialContext, and Spatiotemporal Information for Studying FakeNews on Social Media.Big Data8, 3 (2020), 171–188.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Jiang2018&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Shan Jiang and Christo Wilson. 2018. Linguistic signals under misinformation and fact-checking: Evidence from user comments on social media.Proceedings of the ACM on Human-Computer Interaction2, CSCW (2018), 1–23.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Shan Jiang and Christo Wilson. 2018. Linguistic signals under misinformation and fact-checking: Evidence from user comments on social media.Proceedings of the ACM on Human-Computer Interaction2, CSCW (2018), 1–23.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;RumorEval2019&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Genevieve Gorrell, Elena Kochkina, Maria Liakata, Ahmet Aker, Arkaitz Zubiaga, Kalina Bontcheva, and Leon Derczynski. 2019. SemEval-2019Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours. InProceedings of the 13th International Workshop on SemanticEvaluation. 845–854.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Genevieve Gorrell, Elena Kochkina, Maria Liakata, Ahmet Aker, Arkaitz Zubiaga, Kalina Bontcheva, and Leon Derczynski. 2019. SemEval-2019Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours. InProceedings of the 13th International Workshop on SemanticEvaluation. 845–854.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Rumor-anomaly&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Nguyen Thanh Tam, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Nguyen Quoc Viet Hung, and Bela Stantic. 2019. From anomaly detectionto rumour detection using data streams of social platforms.Proceedings of the VLDB Endowment12, 9 (2019), 1016–1029.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Nguyen Thanh Tam, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Nguyen Quoc Viet Hung, and Bela Stantic. 2019. From anomaly detectionto rumour detection using data streams of social platforms.Proceedings of the VLDB Endowment12, 9 (2019), 1016–1029.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;WeChat-Dataset&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Yaqing Wang, Weifeng Yang, Fenglong Ma, Jin Xu, Bin Zhong, Qiang Deng, and Jing Gao. 2020. Weak supervision for fakenews detection viareinforcement learning. InProceedings of the AAAI Conference on Artificial Intelligence, Vol. 34. 516–523.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Yaqing Wang, Weifeng Yang, Fenglong Ma, Jin Xu, Bin Zhong, Qiang Deng, and Jing Gao. 2020. Weak supervision for fakenews detection viareinforcement learning. InProceedings of the AAAI Conference on Artificial Intelligence, Vol. 34. 516–523.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Fang&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Van-Hoang Nguyen, Kazunari Sugiyama, Preslav Nakov,and Min-Yen Kan. 2020. FANG: Leveraging Social Context for Fake News DetectionUsing Graph Representation. InProceedings of the 29th ACM International Conference on Information and Knowledge Management. 1165–1174.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Van-Hoang Nguyen, Kazunari Sugiyama, Preslav Nakov,and Min-Yen Kan. 2020. FANG: Leveraging Social Context for Fake News DetectionUsing Graph Representation. InProceedings of the 29th ACM International Conference on Information and Knowledge Management. 1165–1174.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;WhatsApp&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Julio CS Reis, Philipe Melo, Kiran Garimella, JussaraM Almeida, Dean Eckles, and Fabrício Benevenuto. 2020. A Dataset of Fact-Checked ImagesShared on WhatsApp During the Brazilian and Indian Elections. InProceedings of the International AAAI Conference on Web and Social Media,Vol. 14. 903–908.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Julio CS Reis, Philipe Melo, Kiran Garimella, JussaraM Almeida, Dean Eckles, and Fabrício Benevenuto. 2020. A Dataset of Fact-Checked ImagesShared on WhatsApp During the Brazilian and Indian Elections. InProceedings of the International AAAI Conference on Web and Social Media,Vol. 14. 903–908.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Fakeddit&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Kai Nakamura, Sharon Levy, and William Yang Wang. 2020.  Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake NewsDetection. InProceedings of the 12th Language Resources and Evaluation Conference. 6149–6157.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Kai Nakamura, Sharon Levy, and William Yang Wang. 2020.  Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake NewsDetection. InProceedings of the 12th Language Resources and Evaluation Conference. 6149–6157.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Reddit_comments&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Vinay Setty and Erlend Rekve. 2020.  Truth be Told: FakeNews Detection Using User Reactions on Reddit. InProceedings of the 29th ACMInternational Conference on Information and Knowledge Management. 3325–3328.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Vinay Setty and Erlend Rekve. 2020.  Truth be Told: FakeNews Detection Using User Reactions on Reddit. InProceedings of the 29th ACMInternational Conference on Information and Knowledge Management. 3325–3328.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;HealthStory&lt;/strong&gt;&lt;/p&gt;
@@ -360,68 +323,57 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;HealthRelease&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Enyan Dai, Yiwei Sun, and Suhang Wang. 2020. Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository. InProceedings of the International AAAI Conference on Web and Social Media, Vol. 14. 853–862.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Enyan Dai, Yiwei Sun, and Suhang Wang. 2020. Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository. InProceedings of the International AAAI Conference on Web and Social Media, Vol. 14. 853–862.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;CoAID&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Limeng Cui and Dongwon Lee. 2020. Coaid: Covid-19 healthcare misinformation dataset.arXiv preprint arXiv:2006.00885(2020).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Limeng Cui and Dongwon Lee. 2020. Coaid: Covid-19 healthcare misinformation dataset.arXiv preprint arXiv:2006.00885(2020).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;COVID-HeRA&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Arkin Dharawat, Ismini Lourentzou, Alex Morales, and ChengXiang Zhai. 2020. Drink bleach or do what now? covid-hera: A dataset for risk-informed health decision making in the presence of covid19 misinformation.arXiv preprint arXiv:2010.08743(2020).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Arkin Dharawat, Ismini Lourentzou, Alex Morales, and ChengXiang Zhai. 2020. Drink bleach or do what now? covid-hera: A dataset for risk-informed health decision making in the presence of covid19 misinformation.arXiv preprint arXiv:2010.08743(2020).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;ArCOV19-Rumors&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Fatima Haouari, Maram Hasanain, Reem Suwaileh, and Tamer Elsayed. 2021. ArCOV19-Rumors: Arabic COVID-19 TwitterDataset for Misinfor-mation Detection. InProceedings of the Sixth Arabic Natural Language Processing Workshop. 72–81.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Fatima Haouari, Maram Hasanain, Reem Suwaileh, and Tamer Elsayed. 2021. ArCOV19-Rumors: Arabic COVID-19 TwitterDataset for Misinfor-mation Detection. InProceedings of the Sixth Arabic Natural Language Processing Workshop. 72–81.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;MM-COVID&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Yichuan Li, Bohan Jiang, Kai Shu, and Huan Liu. 2020. MM-COVID: A multilingual and multimodal data repository for combating COVID-19disinformation.arXiv preprint arXiv:2011.04088(2020).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Yichuan Li, Bohan Jiang, Kai Shu, and Huan Liu. 2020. MM-COVID: A multilingual and multimodal data repository for combating COVID-19disinformation.arXiv preprint arXiv:2011.04088(2020).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Constraint&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Parth Patwa, Shivam Sharma, Srinivas PYKL, Vineeth Guptha, Gitanjali Kumari, Md Shad Akhtar, Asif Ekbal, AmitavaDas, and TanmoyChakraborty. 2020. Fighting an Infodemic: COVID-19 Fake News Dataset.arXiv preprint arXiv:2011.03327(2020).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Parth Patwa, Shivam Sharma, Srinivas PYKL, Vineeth Guptha, Gitanjali Kumari, Md Shad Akhtar, Asif Ekbal, AmitavaDas, and TanmoyChakraborty. 2020. Fighting an Infodemic: COVID-19 Fake News Dataset.arXiv preprint arXiv:2011.03327(2020).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Indic-covid&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Debanjana Kar, Mohit Bhardwaj, Suranjana Samanta, and Amar Prakash Azad. 2020. No rumours please! A multi-indic-lingual approach forCOVID fake-tweet detection.arXiv preprint arXiv:2010.06906(2020).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Debanjana Kar, Mohit Bhardwaj, Suranjana Samanta, and Amar Prakash Azad. 2020. No rumours please! A multi-indic-lingual approach forCOVID fake-tweet detection.arXiv preprint arXiv:2010.06906(2020).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;COVID-19-FAKES&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Mohamed K Elhadad, Kin Fun Li, and Fayez Gebali. 2020. COVID-19-FAKES: A twitter (Arabic/English) dataset for detecting misleading informa-tion on COVID-19. InInternational Conference on Intelligent Networking and Collaborative Systems. Springer, 256–268.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Mohamed K Elhadad, Kin Fun Li, and Fayez Gebali. 2020. COVID-19-FAKES: A twitter (Arabic/English) dataset for detecting misleading informa-tion on COVID-19. InInternational Conference on Intelligent Networking and Collaborative Systems. Springer, 256–268.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;CHECKED&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Chen Yang, Xinyi Zhou, and Reza Zafarani. 2021. CHECKED: Chinese COVID-19 fake news dataset.Social Network Analysis and Mining11, 1(2021), 1–8.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Chen Yang, Xinyi Zhou, and Reza Zafarani. 2021. CHECKED: Chinese COVID-19 fake news dataset.Social Network Analysis and Mining11, 1(2021), 1–8.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;COVID-Alam&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Firoj Alam, Fahim Dalvi, Shaden Shaar, Nadir Durrani, Hamdy Mubarak, Alex Nikolov, Giovanni Da San Martino, Ahmed Abdelali, Hassan Sajjad,Kareem Darwish, et al. 2021. Fighting the COVID-19 Infodemic in Social Media: A Holistic Perspective and a Call to Arms. InProceedings of theInternational AAAI Conference on Web and Social Media, Vol. 15. 913–922.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Firoj Alam, Fahim Dalvi, Shaden Shaar, Nadir Durrani, Hamdy Mubarak, Alex Nikolov, Giovanni Da San Martino, Ahmed Abdelali, Hassan Sajjad,Kareem Darwish, et al. 2021. Fighting the COVID-19 Infodemic in Social Media: A Holistic Perspective and a Call to Arms. InProceedings of theInternational AAAI Conference on Web and Social Media, Vol. 15. 913–922.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;COVID-RUMOR&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Mingxi Cheng, Songli Wang, Xiaofeng Yan, Tianqi Yang, Wenshuo Wang, Zehao Huang, Xiongye Xiao, Shahin Nazarian, and Paul Bogdan. 2021.A COVID-19 Rumor Dataset.Frontiers in Psychology12 (2021).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Mingxi Cheng, Songli Wang, Xiaofeng Yan, Tianqi Yang, Wenshuo Wang, Zehao Huang, Xiongye Xiao, Shahin Nazarian, and Paul Bogdan. 2021.A COVID-19 Rumor Dataset.Frontiers in Psychology12 (2021).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/span&gt;
@@ -442,7 +394,7 @@ William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://hkefka385.github.io/dataset/image/dataset2.png&#34; alt=&#34;Sample Image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
