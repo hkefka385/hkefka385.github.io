@@ -1,0 +1,1613 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Taichi Murayama　(村山 太一)" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Overview Fake news has caused significant damage to various fields of society, e.g., economy, politics, and health problems. To counter this problem, various fake news datasets have been constructed." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://hkefka385.github.io/dataset/fakenews-japanese/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.2a85acfde01ecde91ff15c66a13984b7.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://hkefka385.github.io/dataset/fakenews-japanese/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Taichi Murayama" />
+  <meta property="og:url" content="https://hkefka385.github.io/dataset/fakenews-japanese/" />
+  <meta property="og:title" content="Japanese Fake News Dataset | Taichi Murayama" />
+  <meta property="og:description" content="Overview Fake news has caused significant damage to various fields of society, e.g., economy, politics, and health problems. To counter this problem, various fake news datasets have been constructed." /><meta property="og:image" content="https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://hkefka385.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Japanese Fake News Dataset | Taichi Murayama</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="7b6bbd0adcfd76ec12c745a420653a89" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ced4c4e0190cf57ce42494e355f2bdf6.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Taichi Murayama</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Taichi Murayama</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/project/publications"><span>Profile/Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/dataset/fakenews-japanese"><span>Japanese Fake News Dataset</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Japanese Fake News Dataset</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <small>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/dataset/image/fig4-3-1.png" alt="Sample Image" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="overview">Overview</h2>
+<p>Fake news has caused significant damage to various fields of society, e.g., economy, politics, and health problems. To counter this problem, various fake news datasets have been constructed. These existing datasets have focused almost exclusively on the factuality aspect of the news. <strong>Can we fully understand &ldquo;fake news&rdquo; and various events it causes based on these datasets given factuality labels?</strong> This is exactly the motivation behind our dataset construction. To promote understanding of fake news, we consider it is necessary to provide not only factual information but also information from various perspectives; the intention of the false news disseminator, the harmfulness of the news to our society, the target of the news, etc. We built a novel annotation scheme with fine-grained labeling to capture the various aspects of fake news, which is built based on the detailed investigations of existing fake news datasets. We then construct the first Japanese fake news dataset according to the annotation scheme. Our dataset can be expected to bring us in-depth understanding of fake news.
+<br>
+<br></p>
+<h2 id="dataset-description">Dataset Description</h2>
+<p>Our dataset includes 307 news stories, which were verified by <a href="https://fij.info/" target="_blank" rel="noopener">Fact Check Initiative Japan</a> between July 2019 and October 2021. We provide our dataset in two folders: One is <strong>Label</strong> folder, which contains label information by our annotation and fact-checking URLs. Another is <strong>Tweet</strong> folder, which contains the collected tweet IDs related to each news. <br></p>
+<h4 id="strongour-dataset-is-published-atstrong-httpszenodoorgrecord5831617httpszenodoorgrecord5831617"><strong>Our dataset is published at</strong> <a href="https://zenodo.org/record/5831617" target="_blank" rel="noopener">https://zenodo.org/record/5831617</a></h4>
+<br>
+<ul>
+<li>
+<p><strong>Label folder</strong> <br>
+This folder contains our annotation labels to each news. It is composed of two files.</p>
+<ul>
+<li>
+<p><strong>label.csv</strong> <br>
+This file composes of and ID, article names, URL, and our annotation labels.
+The file is tsv format, whose column names are below:</p>
+<blockquote>
+<p>ID  Article URL Q1  Q2-1  Q2-2A Q2-2B Q4  Q5  Q6  Q7</p>
+</blockquote>
+</li>
+<li>
+<p><strong>q3-*.csv</strong> <br>
+We provide the label for Q3 assigned by each annotator.
+The file is tsv format, whose column names are below:</p>
+<blockquote>
+<p>ID  Q3</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tweet folder</strong><br>
+This folder contains the collected tweet IDs related to each news. In a folder for each news item named news ID, there are two types of posts: one (<strong>FS</strong>) is tweetIDs related to the original news item and another (<strong>FC</strong>) is tweets related to the fact-checking article. <br>
+Additionally, we provide three types of tweet information by separate file:</p>
+<ul>
+<li>Tweet IDs (tweet)</li>
+<li>User IDs (user)</li>
+<li>Conversation IDs (conv) <br></li>
+</ul>
+<p>But, each news folder does not always have all these files because of the removal. <br>
+When we have, in News ID &ldquo;21&rdquo;, a list of tweet IDs and user IDs for the original news article (FS) and a list of tweet IDs and user IDs for the fact-checking article related to it (FC), our file structure would be below:</p>
+<blockquote>
+<p>Tweet/21/FS-21-tweet.txt <br>
+Tweet/21/FS-21-user.txt <br>
+Tweet/21/FC-21-tweet.txt <br>
+Tweet/21/FC-21-user.txt <br></p>
+</blockquote>
+</li>
+</ul>
+<br>
+<br>
+<h2 id="paper">Paper</h2>
+<p>Read our arXiv paper for more details <a href="https://arxiv.org/abs/2204.02718" target="_blank" rel="noopener">here</a><br>
+If you use this dataset, please cite</p>
+<blockquote>
+<p>@article{murayama2022annotation,
+title={Annotation-Scheme Reconstruction for&quot; Fake News&quot; and Japanese Fake News Dataset},
+author={Murayama, Taichi and Hisada, Shohei and Uehara, Makoto and Wakamiya, Shoko and Aramaki, Eiji},
+journal={arXiv preprint arXiv:2204.02718},
+year={2022}
+}</p>
+</blockquote>
+<br>
+<br>
+<p><a name="surveylist"></a></p>
+<h2 id="existing-dataset-list">Existing dataset list</h2>
+<p>We examined 51 fake news detection datasets and identified several issues that needed to be resolved for dataset constructuion. Each dataset are listed in below.</p>
+<p>Read our arXiv paper for more detailed descriptions of each dataset: <a href="https://arxiv.org/abs/2111.03299" target="_blank" rel="noopener">https://arxiv.org/abs/2111.03299</a></p>
+<h4 id="fake-news-detection-dataset-on-news-articles">Fake News Detection Dataset on news articles</h4>
+<span style="font-size: 70%;">
+<ul>
+<li>
+<p><strong>Politifact14</strong></p>
+<blockquote>
+<p>Andreas Vlachos and Sebastian Riedel. 2014. Fact checking: Task definition and dataset construction. InProceedings of the ACL 2014 Workshop onLanguage Technologies and Computational Social Science. 18–22.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Buzzfeed_political</strong></p>
+</li>
+<li>
+<p><strong>Random_political</strong></p>
+<blockquote>
+<p>Benjamin D Horne and Sibel Adali. 2017. This Just In: Fake News Packs a Lot in Title, Uses Similar, Repetitive Contentin Text Body, More Similarto Satire than Real News. InProceedings of the 2nd International Workshop on News and Public Opinion at ICWSM.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Ahmed2017</strong></p>
+<blockquote>
+<p>Hadeer Ahmed, Issa Traore, and Sherif Saad. 2017. Detection of online fake news using n-gram analysis and machine learning techniques. InInternational conference on intelligent, secure, and dependable systems in distributed and cloud environments. Springer, 127–138.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>LIAR</strong></p>
+<blockquote>
+<p>Tariq Alhindi, Savvas Petridis, and Smaranda Muresan.2018. Where is your Evidence: Improving Fact-checking by Justification Modeling. InProceedings of the First Workshop on Fact Extraction and VERification (FEVER). 85–90.
+William Yang Wang. 2017. “Liar, Liar Pants on Fire”: A New Benchmark Dataset for Fake News Detection. InProceedings of the 55th AnnualMeeting of the Association for Computational Linguistics (Volume 2: Short Papers). 422–426.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>TSHP-17_politifac</stong></p>
+<blockquote>
+<p>Hannah Rashkin, Eunsol Choi, Jin Yea Jang, Svitlana Volkova, and Yejin Choi. 2017. Truth of varying shades: Analyzing language in fake newsand political fact-checking. InProceedings of the 2017 conference on empirical methods in natural language processing. 2931–2937.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>FakeNewsAMT</strong></p>
+</li>
+<li>
+<p><strong>Celebrity</strong></p>
+<blockquote>
+<p>Verónica Pérez-Rosas, Bennett Kleinberg, AlexandraLefevre, and Rada Mihalcea. 2018. Automatic Detection of Fake News. InProceedings of the27th International Conference on Computational Linguistics. 3391–3401.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Kaggle_UTK</strong></p>
+<blockquote>
+<p>TK Machine Learning Club. 2018. Fake News: Build a system to identify unreliable news articles. <a href="https://www.kaggle.com/c/fake-news" target="_blank" rel="noopener">https://www.kaggle.com/c/fake-news</a>.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>MisInfoText_Buzzfeed</strong></p>
+</li>
+<li>
+<p><strong>MisInfoText_Snopes</strong></p>
+<blockquote>
+<p>Fatemeh Torabi Asr and Maite Taboada. 2019. Big Data and quality data for fake news and misinformation detection.Big Data &amp; Society6, 1(2019), 2053951719843310</p>
+</blockquote>
+</li>
+<li>
+<p><strong>FA-KES</strong></p>
+<blockquote>
+<p>Fatima K Abu Salem, Roaa Al Feel, Shady Elbassuoni, Mohamad Jaber, and May Farah. 2019. Fa-kes: A fake news dataset around the syrian war.InProceedings of the International AAAI Conference on Web and Social Media, Vol. 13. 573–582.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Spanish-v1</strong></p>
+</li>
+<li>
+<p><stroing>Spanish-v2</stroing></p>
+<blockquote>
+<p>Juan-Pablo Posadas-Durán, Helena Gómez-Adorno, Grigori Sidorov, and Jesús Jaime Moreno Escobar. 2019. Detection of fake news in a newcorpus for the Spanish language.Journal of Intelligent &amp; Fuzzy Systems36, 5 (2019), 4869–4876.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>fauxtography</strong></p>
+<blockquote>
+<p>Dimitrina Zlatkova, Preslav Nakov, and Ivan Koychev.2019. Fact-Checking Meets Fauxtography: Verifying ClaimsAbout Images. InProceedings ofthe 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing(EMNLP-IJCNLP). Association for Computational Linguistics, 2099–2108.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Breaking!</strong></p>
+<blockquote>
+<p>Subhabrata Mukherjee and Gerhard Weikum. 2015. Leveraging joint interactions for credibility analysis in news communities. InProceedings ofthe 24th ACM International on Conference on Information andKnowledge Management. 353–362</p>
+</blockquote>
+</li>
+<li>
+<p><strong>TDS2020</strong></p>
+<blockquote>
+<p>Ria Gandhi. 2020. Getting Real with Fake News. <a href="https://towardsdatascience.com/getting-real-with-fake-news-d4bc033eb38a" target="_blank" rel="noopener">https://towardsdatascience.com/getting-real-with-fake-news-d4bc033eb38a</a></p>
+</blockquote>
+</li>
+<li>
+<p><strong>FakeCovid</strong></p>
+<blockquote>
+<p>Gautam Kishore Shahi and Durgesh Nandini. 2020.  FakeCovid – A Multilingual Cross-domain Fact Check News Dataset for COVID-19. InWorkshop Proceedings of the 14th International AAAI Conference on Web and Social Media.</p>
+</blockquote>
+</li>
+<li>
+<p><stroing>TrueFact_FND</stroing></p>
+<blockquote>
+<p>KDD 2020 TrueFact Workshop: Making a Credible Webfor Tomorrow: Shared Task 2. <a href="https://www.microsoft.com/en-us/research/event/kdd-2020-truefact-workshop-making-a-credible-web-for-tomorrow/#!shared-tasks" target="_blank" rel="noopener">https://www.microsoft.com/en-us/research/event/kdd-2020-truefact-workshop-making-a-credible-web-for-tomorrow/#!shared-tasks</a></p>
+</blockquote>
+</li>
+</ul>
+</span>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/dataset/image/dataset1.png" alt="Sample Image" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="fake-news-detection-dataset-on-social-media-posts">Fake News Detection Dataset on social media posts</h4>
+<span style="font-size: 70%;">
+<ul>
+<li>
+<p><strong>MediaEval_Dataset</strong></p>
+<blockquote>
+<p>Christina Boididou, Symeon Papadopoulos, Markos Zampoglou, Lazaros Apostolidis, Olga Papadopoulou, and Yiannis Kompatsiaris. 2018. Detec-tion and visualization of misleading content on Twitter.International Journal of Multimedia Information Retrieval7, 1 (2018), 71–86.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>PHEME</strong></p>
+<blockquote>
+<p>Arkaitz Zubiaga, Maria Liakata, Rob Procter, Geraldine Wong Sak Hoi, and Peter Tolmie. 2016.  Analysing how peopleorient to and spreadrumours in social media by looking at conversational threads.PloS one11, 3 (2016), e0150989.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Twitter-ma</strong></p>
+</li>
+<li>
+<p><strong>RUMDECT</strong></p>
+<blockquote>
+<p>Jing Ma, Wei Gao, Prasenjit Mitra, Sejeong Kwon, Bernard J. Jansen, Kam-Fai Wong, and Meeyoung Cha. 2016. Detecting Rumors from Microblogswith Recurrent Neural Networks(IJCAI’16). 3818–3824</p>
+</blockquote>
+</li>
+<li>
+<p><strong>RumorEval2017</strong></p>
+<blockquote>
+<p>Leon Derczynski, Kalina Bontcheva, Maria Liakata, RobProcter, Geraldine Wong Sak Hoi, and Arkaitz Zubiaga. 2017.SemEval-2017 Task 8:RumourEval: Determining rumour veracity and support for rumours. InProceedings of the 11th International Workshop on Semantic Evaluation(SemEval-2017). 69–76.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Twitter15</strong></p>
+</li>
+<li>
+<p><strong>Twitter16</strong></p>
+<blockquote>
+<p>Jing Ma, Wei Gao, and Kam-Fai Wong. 2017. Detect Rumorsin Microblog Posts Using Propagation Structure via Kernel Learning. InProceedingsof the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 708–717.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>BuzzFace</strong></p>
+<blockquote>
+<p>Giovanni C Santia and Jake Ryland Williams. 2018. Buzzface: A news veracity dataset with facebook user commentaryand egos. InProceedingsof the 12th International AAAI Conference on Web and Social Media.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Some-like-it-hoax</strong></p>
+<blockquote>
+<p>Eugenio Tacchini, Gabriele Ballarin, Marco L Della Vedova, Stefano Moret, and Luca de Alfaro. 2017. Some like it Hoax: Automated fake newsdetection in social networks. In2nd Workshop on Data Science for Social Good, SoGood 2017. CEUR-WS, 1–15.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Media_Weibo</strong></p>
+<blockquote>
+<p>Zhiwei Jin, Juan Cao, Han Guo, Yongdong Zhang, and Jiebo Luo. 2017. Multimodal fusion with recurrent neural networks for rumor detectionon microblogs. InProceedings of the 25th ACM international conference on Multimedia. 795–816.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>PHEME-update</strong></p>
+<blockquote>
+<p>Elena Kochkina, Maria Liakata, and Arkaitz Zubiaga. 2018. All-in-one: Multi-task Learning for Rumour Verification. InProceedings of the 27thInternational Conference on Computational Linguistics. 3402–3413.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>FakeNewsNet</strong></p>
+<blockquote>
+<p>Kai Shu, Deepak Mahudeswaran, Suhang Wang, Dongwon Lee, and Huan Liu. 2020. FakeNewsNet: A Data Repository with News Content, SocialContext, and Spatiotemporal Information for Studying FakeNews on Social Media.Big Data8, 3 (2020), 171–188.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Jiang2018</strong></p>
+<blockquote>
+<p>Shan Jiang and Christo Wilson. 2018. Linguistic signals under misinformation and fact-checking: Evidence from user comments on social media.Proceedings of the ACM on Human-Computer Interaction2, CSCW (2018), 1–23.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>RumorEval2019</strong></p>
+<blockquote>
+<p>Genevieve Gorrell, Elena Kochkina, Maria Liakata, Ahmet Aker, Arkaitz Zubiaga, Kalina Bontcheva, and Leon Derczynski. 2019. SemEval-2019Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours. InProceedings of the 13th International Workshop on SemanticEvaluation. 845–854.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Rumor-anomaly</strong></p>
+<blockquote>
+<p>Nguyen Thanh Tam, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Nguyen Quoc Viet Hung, and Bela Stantic. 2019. From anomaly detectionto rumour detection using data streams of social platforms.Proceedings of the VLDB Endowment12, 9 (2019), 1016–1029.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>WeChat-Dataset</strong></p>
+<blockquote>
+<p>Yaqing Wang, Weifeng Yang, Fenglong Ma, Jin Xu, Bin Zhong, Qiang Deng, and Jing Gao. 2020. Weak supervision for fakenews detection viareinforcement learning. InProceedings of the AAAI Conference on Artificial Intelligence, Vol. 34. 516–523.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Fang</strong></p>
+<blockquote>
+<p>Van-Hoang Nguyen, Kazunari Sugiyama, Preslav Nakov,and Min-Yen Kan. 2020. FANG: Leveraging Social Context for Fake News DetectionUsing Graph Representation. InProceedings of the 29th ACM International Conference on Information and Knowledge Management. 1165–1174.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>WhatsApp</strong></p>
+<blockquote>
+<p>Julio CS Reis, Philipe Melo, Kiran Garimella, JussaraM Almeida, Dean Eckles, and Fabrício Benevenuto. 2020. A Dataset of Fact-Checked ImagesShared on WhatsApp During the Brazilian and Indian Elections. InProceedings of the International AAAI Conference on Web and Social Media,Vol. 14. 903–908.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Fakeddit</strong></p>
+<blockquote>
+<p>Kai Nakamura, Sharon Levy, and William Yang Wang. 2020.  Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake NewsDetection. InProceedings of the 12th Language Resources and Evaluation Conference. 6149–6157.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Reddit_comments</strong></p>
+<blockquote>
+<p>Vinay Setty and Erlend Rekve. 2020.  Truth be Told: FakeNews Detection Using User Reactions on Reddit. InProceedings of the 29th ACMInternational Conference on Information and Knowledge Management. 3325–3328.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>HealthStory</strong></p>
+</li>
+<li>
+<p><strong>HealthRelease</strong></p>
+<blockquote>
+<p>Enyan Dai, Yiwei Sun, and Suhang Wang. 2020. Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository. InProceedings of the International AAAI Conference on Web and Social Media, Vol. 14. 853–862.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>CoAID</strong></p>
+<blockquote>
+<p>Limeng Cui and Dongwon Lee. 2020. Coaid: Covid-19 healthcare misinformation dataset.arXiv preprint arXiv:2006.00885(2020).</p>
+</blockquote>
+</li>
+<li>
+<p><strong>COVID-HeRA</strong></p>
+<blockquote>
+<p>Arkin Dharawat, Ismini Lourentzou, Alex Morales, and ChengXiang Zhai. 2020. Drink bleach or do what now? covid-hera: A dataset for risk-informed health decision making in the presence of covid19 misinformation.arXiv preprint arXiv:2010.08743(2020).</p>
+</blockquote>
+</li>
+<li>
+<p><strong>ArCOV19-Rumors</strong></p>
+<blockquote>
+<p>Fatima Haouari, Maram Hasanain, Reem Suwaileh, and Tamer Elsayed. 2021. ArCOV19-Rumors: Arabic COVID-19 TwitterDataset for Misinfor-mation Detection. InProceedings of the Sixth Arabic Natural Language Processing Workshop. 72–81.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>MM-COVID</strong></p>
+<blockquote>
+<p>Yichuan Li, Bohan Jiang, Kai Shu, and Huan Liu. 2020. MM-COVID: A multilingual and multimodal data repository for combating COVID-19disinformation.arXiv preprint arXiv:2011.04088(2020).</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Constraint</strong></p>
+<blockquote>
+<p>Parth Patwa, Shivam Sharma, Srinivas PYKL, Vineeth Guptha, Gitanjali Kumari, Md Shad Akhtar, Asif Ekbal, AmitavaDas, and TanmoyChakraborty. 2020. Fighting an Infodemic: COVID-19 Fake News Dataset.arXiv preprint arXiv:2011.03327(2020).</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Indic-covid</strong></p>
+<blockquote>
+<p>Debanjana Kar, Mohit Bhardwaj, Suranjana Samanta, and Amar Prakash Azad. 2020. No rumours please! A multi-indic-lingual approach forCOVID fake-tweet detection.arXiv preprint arXiv:2010.06906(2020).</p>
+</blockquote>
+</li>
+<li>
+<p><strong>COVID-19-FAKES</strong></p>
+<blockquote>
+<p>Mohamed K Elhadad, Kin Fun Li, and Fayez Gebali. 2020. COVID-19-FAKES: A twitter (Arabic/English) dataset for detecting misleading informa-tion on COVID-19. InInternational Conference on Intelligent Networking and Collaborative Systems. Springer, 256–268.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>CHECKED</strong></p>
+<blockquote>
+<p>Chen Yang, Xinyi Zhou, and Reza Zafarani. 2021. CHECKED: Chinese COVID-19 fake news dataset.Social Network Analysis and Mining11, 1(2021), 1–8.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>COVID-Alam</strong></p>
+<blockquote>
+<p>Firoj Alam, Fahim Dalvi, Shaden Shaar, Nadir Durrani, Hamdy Mubarak, Alex Nikolov, Giovanni Da San Martino, Ahmed Abdelali, Hassan Sajjad,Kareem Darwish, et al. 2021. Fighting the COVID-19 Infodemic in Social Media: A Holistic Perspective and a Call to Arms. InProceedings of theInternational AAAI Conference on Web and Social Media, Vol. 15. 913–922.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>COVID-RUMOR</strong></p>
+<blockquote>
+<p>Mingxi Cheng, Songli Wang, Xiaofeng Yan, Tianqi Yang, Wenshuo Wang, Zehao Huang, Xiongye Xiao, Shahin Nazarian, and Paul Bogdan. 2021.A COVID-19 Rumor Dataset.Frontiers in Psychology12 (2021).</p>
+</blockquote>
+</li>
+</ul>
+</span>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/dataset/image/dataset2.png" alt="Sample Image" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+</small>
+<br>
+<br>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://hkefka385.github.io/dataset/fakenews-japanese/&amp;text=Japanese%20Fake%20News%20Dataset" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://hkefka385.github.io/dataset/fakenews-japanese/&amp;t=Japanese%20Fake%20News%20Dataset" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Japanese%20Fake%20News%20Dataset&amp;body=https://hkefka385.github.io/dataset/fakenews-japanese/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://hkefka385.github.io/dataset/fakenews-japanese/&amp;title=Japanese%20Fake%20News%20Dataset" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Japanese%20Fake%20News%20Dataset%20https://hkefka385.github.io/dataset/fakenews-japanese/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://hkefka385.github.io/dataset/fakenews-japanese/&amp;title=Japanese%20Fake%20News%20Dataset" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://hkefka385.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/taichi-murayama-%E6%9D%91%E5%B1%B1-%E5%A4%AA%E4%B8%80/avatar_hu01624c31116aa44ade0ddf78bf50021f_37229_270x270_fill_q75_lanczos_center.jpg" alt="Taichi Murayama　(村山 太一)"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://hkefka385.github.io/">Taichi Murayama　(村山 太一)</a></h5>
+      <h6 class="card-subtitle">Researcher</h6>
+      <p class="card-text">My research interests include time series forecasting, fake news, computer social science.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/hkefka385" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://speakerdeck.com/hkefka385" target="_blank" rel="noopener">
+        <i class="fab fa-speaker-deck"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://researchmap.jp/hkefka385" target="_blank" rel="noopener">
+        <i class="fas fa-book"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=NDJWXqkAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/hkefka385" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scrapbox.io/hkefka385/" target="_blank" rel="noopener">
+        <i class="fas fa-paperclip"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.1cb9e2fc8399acee94eab837265b73bf.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
